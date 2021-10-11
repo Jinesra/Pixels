@@ -1,13 +1,14 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-android-extensions'
 }
 
 android {
     compileSdk 31
 
     defaultConfig {
-        applicationId "com.example.pixels_homework"
+        applicationId "com.example.pixels"
         minSdk 21
         targetSdk 31
         versionCode 1
@@ -37,6 +38,8 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.3.1'
     implementation 'com.google.android.material:material:1.4.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.2'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.1.1'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
